@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="turn-container">
+        <h3 id="turn">Current Turn: X</h3>
+    </div>
+    <div class="main-grid" id="game-board">
+        <div class="box" data-index="0"></div>
+        <div class="box" data-index="1"></div>
+        <div class="box" data-index="2"></div>
+        <div class="box" data-index="3"></div>
+        <div class="box" data-index="4"></div>
+        <div class="box" data-index="5"></div>
+        <div class="box" data-index="6"></div>
+        <div class="box" data-index="7"></div>
+        <div class="box" data-index="8"></div>
+    </div>
+    <div class="score-board">
+        <div class="score-container">
+            <div class="score-box left">X: <span id="score-x">0</span></div>
+            <div class="score-box right">O: <span id="score-o">0</span></div>
+        </div>
+        <p class="winning-condition">Winning Condition: First to score 5 wins</p>
+    </div>
+    <button id="play-again" style="display: none;">Play Again</button>
+    <div id="winner-message" style="display: none;"></div>
+    <script src="app.js"></script>
+</body>
+</html>
